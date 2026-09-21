@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Formatações</title>
+    <style>
+        mark{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase, temos um termo em <b>negrito</b> utilizando a tag "b" (não semântica)</p>
+    <p>Nesta frase, temos um termo em <strong>destaque</strong> utilizando a tag "strong" (semântica)</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um termo em <i>itálico</i> utilizando a tag "i" (não semântica)</p>
+    <p>Nesta frase, temos um termo com <em>ênfase</em> utilizando a tag "em" ("emphasis"; não semântica) </p>
+
+    <h2>Marcação</h2>
+    <p>Podemos marcar uma <mark>palavra</mark> ou <mark>frase</mark> com a tag "mark"</p>
+    <p>Para alterar a cor da Marcação, usa-se style como parâmetro dentro da tag mark, a tag "style" no "head" do documento,
+        ou ainda um css externo.</p>
+
+    <h2>Texto grande / pequeno</h2>
+    <p>Nesta frase, temos um termo com <big>letras grandes</big> utilizando a tag "big", que já se tornou obsoleta.</p>
+    <p>Nesta frase, temos um termo com <small>letras pequenas</small> utilizando a tag "small", que ainda é utilizada.</p>
+
+    <h2>Texto inserido / deletado</h2>
+    <p>Nesta frase, temos um termo que deve ser <del>lido</del>, mas não considerado.</p>
+    <p>Nesta frase, temos um termo que foi <ins>inserido depois</ins> ("preenchimento de lacuna"; semântica)</p>
+    <p>Ainda existe a tag "u" que também faz o texto aparecer <u>sublinhado</u>, mas já se tornou obsoleta (não semântica)</p>
+
+    <h2>Texto sobrescrito / subscrito</h2>
+    <p>Para escrever coisas do tipo x<sup>2</sup>+3, usamos a tag "sup" no carctere desejado.</p>
+    <p>Para escrever coisas do tipo H<sub>2</sub>O, usamos a tag "sub" no carctere desejado.</p>
+
+    <h1>Formatações adicionais</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste1')</code> é escrito em linguagem JavaScript</p>
+    <p>O código em linguagem C abaixo será pré-formatado pela tag "pre":</p>
+    <pre>
+        <code>
+    int num;
+    printf("Digite um número");
+    scanf("%d",&num);
+    if(num%2==0){
+        printf("O número digitado é par");
+    }
+    else{
+        printf("O número digitado é impar");
+    }
+        </code>
+    </pre>
+
+    <h2>Citações simples / completas</h2>
+    <p>Como disse Nosso Senhor Jesus Cristo: <q>O diabo é o pai da mentira</q></p>
+    <p>Como disse São Jão Paulo II no início de seu pontificado:</p>
+    <blockquote cite="https://pt.wikipedia.org/wiki/Papa_Jo%C3%A3o_Paulo_II"> <!-- Inserir a fonte é útil para mecanismos de busca e para manter os direitos do dono-->
+        Queridos irmãos e irmãs, todos estamos ainda tristes com a morte do querido papa João Paulo I.
+        E agora os eminentíssimos Cardeais chamaram um novo Bispo de Roma.<br> 
+        Chamaram-no de um país distante... Distante, mas sempre muito próximo pela comunhão na fé e na tradição cristã.
+        Tive medo ao receber esta nomeação, mas o fiz com espírito de obediência a Nosso Senhor e com a confiança total na sua Mãe, a Virgem Santíssima.
+    </blockquote>
+
+    <h2>Abreviações(siglas)</h2>
+    <p>Estou aprendendo <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.
+    Estou adorando!</p>
+    <!--O parâmetro title é colocaod automaticamente, e contém o texto que será mostrado no pop-up ao passar o cursor em cima da sigla-->
+</body>
+</html>
