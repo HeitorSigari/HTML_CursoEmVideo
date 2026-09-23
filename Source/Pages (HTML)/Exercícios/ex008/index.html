@@ -14,5 +14,12 @@
         <source media="(max-width: 1050px )" srcset="imgs/foto-m.png" type="image/png"> <!--Até 1050px de largura o navegador vai colocar a imagem média; barra de rolagem tem 50px-->
         <img src="imgs/foto-g.png" alt="Imagem flexível">
     </picture>
+
+    <h1>Reprodução de Áudio</h1>
+    <audio preload="metadata" controls> <!--É necessário adicionar o parâmetro control para visualização do botão de "play"-->
+        <source src="midia/Ancient History - Bosley.mp3" type="audio/mpeg"> <!--É preciso colocar o "media type" dessa maneira para mp3-->
+        <p>Infelizmente seu navegador não consegue reproduzir o Áudio. Clique <a href="midia/Ancient History - Bosley.mp3">aqui</a> para fazer o dowload.</p>
+        <!--Caso o navegador não consiga carregar o áudio, o parágrafo irá aparecer no lugar-->
+    </audio>
 </body>
 </html>
