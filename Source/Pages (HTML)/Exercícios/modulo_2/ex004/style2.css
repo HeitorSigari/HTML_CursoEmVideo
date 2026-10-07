@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-@font-face {
+@font-face { /*Seletor especial font-face*/
     font-family: Medieval;
-    src: url(fonts/OldLondon.otf) format(opentype), url(fonts/OldLondon.ttf) format(truetype);
+    src: url(fonts/Olondon_.otf) format(opentype), url(fonts/OldLondon.ttf) format(truetype);
     /*
     Tipos de format()
     - opentype (geralmente otf)
