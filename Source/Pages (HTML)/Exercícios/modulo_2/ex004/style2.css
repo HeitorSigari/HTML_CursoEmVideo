@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Medieval;
+    src: url(fonts/OldLondon.otf) format(opentype), url(fonts/OldLondon.ttf) format(truetype);
+    /*
+    Tipos de format()
+    - opentype (geralmente otf)
+    - truetype (geralmente ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advenced Typography)
+    - svg
+    */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: Medieval, serif;
+    font-size: 3em;
+}
+
+h2{
+    font-family: Medieval, serif;
+    font-size: 2em;
+}
