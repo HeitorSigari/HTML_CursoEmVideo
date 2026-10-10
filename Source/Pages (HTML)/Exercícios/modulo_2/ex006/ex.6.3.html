@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos</title>
+    <style>
+        /*
+            Pseudo-elementos são configurações no "conteúdo" do seletor em questão, que pode ser um elemento do código HTML ou mesmo uma classe.
+            Para tanto, usa-se :: após o seletor
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: blueviolet;
+        }
+
+        a::after{
+            content: " [link]";
+            color: rgb(180, 180, 180);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando uma lista</h1>
+    <ul>
+        <li>Acesse o repositório público do professor Gustavo Guanabara clicando <a href="https://gustavoguanabara.github.io">aqui</a></li>
+        <li>Acesse o canal do youtube do Curso em vídeo cliando <a href="https://youtube.com/cursoemvideo/">aqui</a></li>
+        <li>Acesse o site do Curso em vídeo clicando <a href="https://www.cursoemvideo.com">aqui</a></li>
+    </ul>
+</body>
+</html>
