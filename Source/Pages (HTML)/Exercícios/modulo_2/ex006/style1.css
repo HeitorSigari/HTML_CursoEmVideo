@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 /*
-    id em HTML = # em CSS
-    class em html = . em CSS
+    - id em HTML é # em CSS (usado em um elemento por id e por documento)
+    - class em html é . em CSS (usado en mais de um elemento)
+    - é possível configurar duas classes no mesmo elemento ou até um elemento que contenha id e classe, com o id se sobrepondo
 */
 
 body{
@@ -12,6 +13,22 @@ body{
 
 h1#principal{
     text-align: center;
-    text-decoration: underline;
+    background-color: rgb(23, 23, 121);
+    color: white;
 }
 
+.primeiro{
+    color: rgb(0, 153, 255);
+}
+
+.segundo{
+    color: rgb(0, 93, 155);
+}
+
+.terceiro{
+    color: rgb(0, 61, 102);
+}
+
+.destaque{
+    background-color: rgba(255, 255, 0, 0.479);
+}
