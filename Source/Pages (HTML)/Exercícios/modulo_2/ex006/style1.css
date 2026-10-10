@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*
+    id em HTML = # em CSS
+    class em html = . em CSS
+*/
+
+body{
+    background-color: rgba(36, 248, 248, 0.479);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#principal{
+    text-align: center;
+    text-decoration: underline;
+}
+
